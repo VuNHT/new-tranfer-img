@@ -138,11 +138,7 @@ function init() {
   for (var i = 0; i < table.length; i += 5) {
     var element = document.createElement('div');
     element.className = 'element';
-   element.style.backgroundColor = 'rgba(0,127,127,' + (Math.random() * 0.5 + 0.25) + ')';
-  //  element.style.backgroundImage =  "url('https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img (132).jpg')";
-  //   element.style.backgroundPosition = 'center center';
-  //   element.style.backgroundRepeat = 'no-repeat';
-  //   element.style.backgroundSize = 'cover';
+    element.style.backgroundColor = 'rgba(0,127,127,' + (Math.random() * 0.5 + 0.25) + ')';
     // var number = document.createElement('div');
     // number.className = 'number';
     // number.textContent = (i / 5) + 1;
@@ -203,7 +199,7 @@ function init() {
   //
   renderer = new THREE.CSS3DRenderer();
   renderer.setSize(window.innerWidth, window.innerHeight);
-  document.getElementById('container1').appendChild(renderer.domElement);
+  document.getElementById('container').appendChild(renderer.domElement);
   //
   controls = new THREE.TrackballControls(camera, renderer.domElement);
   controls.rotateSpeed = 0.5;

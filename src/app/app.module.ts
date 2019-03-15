@@ -4,6 +4,10 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ViewImgComponent } from './view-img/view-img.component';
 import { MenuComponent } from './menu/menu.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutes } from './app.routing';
+import { MDBBootstrapModule, NavbarModule, WavesModule, DropdownModule } from 'angular-bootstrap-md';
+import { Utils } from './shared/utils/utils';
 
 @NgModule({
   declarations: [
@@ -12,9 +16,16 @@ import { MenuComponent } from './menu/menu.component';
     MenuComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MDBBootstrapModule.forRoot(),
+    NavbarModule,
+     WavesModule.forRoot(),
+     DropdownModule.forRoot(),
+     RouterModule.forRoot(AppRoutes)
   ],
-  providers: [],
+  providers: [
+    Utils
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
