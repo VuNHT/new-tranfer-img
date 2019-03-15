@@ -14,14 +14,14 @@ export class ViewImgComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.utils.initJS('./../assets/js/periodictable.js');
+    this.utils.initJS('https://vunht.github.io/new-tranfer-img/assets/js/periodictable.js');
   }
 
   public backtoDashboard() {
     if (this.utils.isLocal()) {
       window.location.replace('http://localhost:4200/dasboard');
     } else {
-      window.location.replace('https://vunht.github.io/test-console/dasboard');
+      window.location.replace('https://vunht.github.io/new-tranfer-img/dasboard');
     }
   }
 
