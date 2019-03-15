@@ -15,7 +15,7 @@ var Element = function (x, y, z, ry, content) {
       if (window.location.hostname.indexOf('localhost') > -1) {
         window.location.replace('http://localhost:4200/view-img');
       } else {
-        window.location.replace('https://vunht.github.io/test-console/view-img');
+        window.location.replace('https://vunht.github.io/new-tranfer-img/view-img');
       }
     } else {
       alert('Not Found !!');
