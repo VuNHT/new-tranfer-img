@@ -312,6 +312,12 @@ MIT
 @angular/platform-browser
 MIT
 
+@angular/forms
+MIT
+
+@angular/router
+MIT
+
 zone.js
 MIT
 The MIT License
