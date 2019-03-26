@@ -49,8 +49,9 @@ animate();
 
 function init() {
   var container = document.getElementById('container');
-  camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 5000);
-  camera.position.set(500, 350, 0);
+  camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 10000);
+  camera.position.set( 500, 350, 300 );
+  // camera.lookAt( 0, 0, 0 );
   scene = new THREE.Scene();
   renderer = new THREE.CSS3DRenderer();
   renderer.setSize(window.innerWidth, window.innerHeight);
@@ -90,4 +91,9 @@ function animate() {
   requestAnimationFrame(animate);
   controls.update();
   renderer.render(scene, camera);
+}
+
+function update() {
+  object.rotation.x += 0.01;
+  object.rotation.y += 0.005;
 }
