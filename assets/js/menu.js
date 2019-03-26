@@ -17,6 +17,12 @@ var Element = function (x, y, z, ry, content) {
       } else {
         window.location.replace('https://vunht.github.io/new-tranfer-img/view-img');
       }
+    } else if (a[0].innerHTML === 'tranfer Car') {
+      if (window.location.hostname.indexOf('localhost') > -1) {
+        window.location.replace('http://localhost:4200/tranfer-car');
+      } else {
+        window.location.replace('https://vunht.github.io/new-tranfer-img/tranfer-car');
+      }
     } else {
       alert('Not Found !!');
     }
@@ -62,7 +68,7 @@ function init() {
   // group.add( new Element( 'IrydklNpcFI', 0, 0, - 240, Math.PI ) );
   // group.add( new Element( '9ubytEsCaS0', - 240, 0, 0, - Math.PI / 2 ) );
   group.add(new Element(0, 0, 240, 0, 'Periodictable'));
-  group.add(new Element(240, 0, 0, Math.PI / 2, 'dasboard 2'));
+  group.add(new Element(240, 0, 0, Math.PI / 2, 'tranfer Car'));
   group.add(new Element(0, 0, -240, Math.PI, 'dasboard 3'));
   group.add(new Element(-240, 0, 0, -Math.PI / 2, 'dasboard 4'));
 
