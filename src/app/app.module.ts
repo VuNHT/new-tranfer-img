@@ -14,6 +14,7 @@ import { Utils } from './shared/utils/utils';
 import { jqxBarGaugeComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxbargauge';
 import { jqxKnobComponent } from 'jqwidgets-scripts/jqwidgets-ts/angular_jqxknob';
 import { LoginComponent } from './login/login.component';
+import { TranferCarComponent } from './tranfer-car/tranfer-car.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LoginComponent } from './login/login.component';
     MenuComponent,
     jqxBarGaugeComponent,
     jqxKnobComponent,
-    LoginComponent
+    LoginComponent,
+    TranferCarComponent
   ],
   imports: [
     BrowserModule,
