@@ -1,0 +1,43 @@
+<div class="color-block purple-gradient z-depth-2 py-4 white-text">
+  <button type="button" mdbBtn color="warning" mdbWavesEffect (click)="modalLogin()">LOGIN</button>
+</div>
+
+<div mdbModal #basicModal="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title w-100" id="myModalLabel">LOGIN</h4>
+      </div>
+      <div class="modal-body text-center">
+
+        <mdb-badge pill="true" #badge default="true">Key: {{ randomValue }}</mdb-badge>
+        <!-- <mdb-badge pill="true" primary="true">Key2: 51</mdb-badge>
+        <mdb-badge pill="true" success="true">Key3: 52</mdb-badge> -->
+
+        <div class="sub-modal-body">
+        <jqxKnob #myKnob (onChange)="onChange($event)" [min]="0" [max]="99" [startAngle]="120" [endAngle]="480" [snapToStep]="true"
+          [rotation]="'clockwise'" [marks]="marks" [labels]="labels" [progressBar]="progressBar" [pointer]="pointer"
+          [spinner]="spinner" [dial]="dial" [dragStartAngle]="120" [dragEndAngle]="420">
+        </jqxKnob>
+
+        <!-- <a mdbBtn floating="true" class="btn-value" size="lg" gradient="purple" mdbWavesEffect>
+            <mdb-icon icon="bolt"></mdb-icon>
+          </a> -->
+          <div class="sub-btn-value">
+        <button type="button" class="btn-value" [ngClass]="checkKey ? 'success' : 'error'" mdbBtn mdbWavesEffect (click)="validValue()">{{ valueBtn }}</button>
+      </div>
+  </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="basicModal.hide()"
+          mdbWavesEffect>Close</button>
+        <button type="button" mdbBtn color="primary" class="relative waves-light" mdbWavesEffect>Login</button>
+      </div>
+    </div>
+  </div>
+</div>

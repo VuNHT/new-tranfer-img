@@ -1,0 +1,52 @@
+.z-depth-2 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-body {
+    .sub-modal-body {
+      display: flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+  
+      .sub-btn-value {
+        position: absolute;
+  
+        .btn-value {
+          width: 200px;
+          height: 200px;
+          border-radius: 100%;
+        }
+  
+        .error {
+          background: #dc3545;
+          box-shadow: 0 0 10px 10px #e06666;
+          -webkit-animation-name: glowyello;
+          -webkit-animation-duration: 2s;
+          -webkit-animation-iteration-count: infinite;
+        }
+  
+        .success {
+          background: #17a25d;
+        }
+      }
+    }
+  }
+  
+  @keyframes glowyello {
+    from {
+      box-shadow: 0 0 10px 1px #dc3545;
+    }
+  
+    50% {
+      box-shadow: 0 0 10px 10px #dc3545;
+    }
+  
+    to {
+      box-shadow: 0 0 10px 1px #dc3545;
+    }
+  }

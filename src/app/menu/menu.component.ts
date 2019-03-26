@@ -13,7 +13,8 @@ export class MenuComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.utils.initJS('https://vunht.github.io/new-tranfer-img/assets/js/menu.js');
+    // this.utils.initJS('https://vunht.github.io/new-tranfer-img/assets/js/menu.js');
+    this.utils.initJS('./../assets/js/menu.js');
   }
 
 }
